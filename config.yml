@@ -1,0 +1,17 @@
+logging:
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL
+  level: INFO
+  loggers:
+    com.javaeeeee: INFO
+database:
+    driverClass: oracle.jdbc.driver.OracleDriver
+    user: sigoweb
+    password: sigobackend!
+    url: jdbc:oracle:thin:@//192.1.1.26:1521/sigotest
+    validationQuery: "SELECT 1 from dual"
+server:
+   gzip:
+      enabled: false
+   applicationConnectors:
+    - type: http   
+      port: 9001
